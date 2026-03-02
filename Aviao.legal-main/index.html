@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aeroporto Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="painel-aeroporto">
+        <h1>Painel de Controle de Voo</h1>
+        
+        <!-- Representação visual do avião -->
+        <div id="container-aviao">
+            <img id="aviao" src="aviao.png" alt="Avião" width="100">
+        </div>
+
+        <!-- Informações do Voo -->
+        <div class="info-voo">
+            <p><strong>Voo:</strong> <span id="display-codigo">---</span></p>
+            <p><strong>Rota:</strong> <span id="display-rota">---</span></p>
+            <p><strong>Horário:</strong> <span id="display-horario">---</span></p>
+            <p><strong>Status:</strong> <span id="display-status">Aguardando</span></p>
+        </div>
+
+        <!-- Controles -->
+        <div class="controles">
+            <button onclick="controladorDecolar()">Decolar</button>
+            <button onclick="controladorAtrasar()">Atrasar</button>
+            <button onclick="controladorPousar()">Pousar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
